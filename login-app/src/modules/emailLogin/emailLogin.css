@@ -1,0 +1,18 @@
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form-box {
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+.login-form-box h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

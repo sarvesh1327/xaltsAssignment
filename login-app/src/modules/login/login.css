@@ -1,0 +1,22 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wallet-login-button, .email-login-button {
+  font-size: 24px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0077FF;
+  color: #FFF;
+  margin: 16px 0;
+  cursor: pointer;
+}
+
+.wallet-login-button:hover, .email-login-button:hover {
+  background-color: #0055CC;
+}
