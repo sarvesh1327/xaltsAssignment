@@ -61,8 +61,8 @@ const WalletLogin = () => {
       console.log(verifyResponseData.success);
       if (verifyResponseData.success === true) {
         const { data } = verifyResponseData || {};
-        const { token, email } = data || {};
-        localStorage.setItem('token', token);
+        const { idToken, email } = data || {};
+        localStorage.setItem('token', idToken);
         setEmail(email);
         setLoggedIn(true);
       } else {

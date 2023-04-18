@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './signup.css';
 
 function SignupForm() {
+  const navigate = useNavigate();
+  const onsignup = () => {
+    navigate("/login");
+  };
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
@@ -68,6 +73,7 @@ function SignupForm() {
 
         // Revoke the URL object to free up memory
         URL.revokeObjectURL(url);
+        onsignup();
       } else {
         console.log("Passwords don't match!");
         alert('Password doesnt match');
